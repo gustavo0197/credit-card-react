@@ -1,7 +1,11 @@
 import React from "react";
-// import styles from "./Mastercard.module.css";
-import "./Mastercard.module.scss";
+import { CardChip } from "../../CardChip";
+import "./Mastercard.scss";
 
 export function Mastercard() {
-  return <div className="credit-card">Mastercard</div>;
+  return (
+    <div className="credit-card mastercard">
+      <CardChip />
+    </div>
+  );
 }

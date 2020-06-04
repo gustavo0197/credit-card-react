@@ -4,7 +4,7 @@
   }
 }
 
-@mixin midifier($element) {
+@mixin modifier($element) {
   &--#{$element} {
     @content;
   }
