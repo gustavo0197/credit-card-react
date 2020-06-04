@@ -1,0 +1,11 @@
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin midifier($element) {
+  &--#{$element} {
+    @content;
+  }
+}

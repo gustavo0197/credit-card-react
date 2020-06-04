@@ -1,0 +1,9 @@
+@import "./src/assets/styles/mixins.scss";
+@import "./src/assets/styles/credit-card.scss";
+
+.credit-card {
+  border: 2px solid black;
+  width: 25em;
+  height: 14.5em;
+  border-radius: 0.9em;
+}
