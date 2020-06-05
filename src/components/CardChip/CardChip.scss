@@ -1,44 +1,42 @@
 @import "./src/assets/styles/mixins.scss";
 @import "./src/assets/styles/credit-card.scss";
 
-.credit-card {
-  @include element("chip") {
-    background-color: #d6d6d6;
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    width: 3.2em;
-    height: 2.1em;
-    border-radius: 4px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+.chip {
+  background-color: #d6d6d6;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  width: 3.2em;
+  height: 2.1em;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 
-    @include modifier("top-left-cell") {
-      border-right: 1px solid #b1b1b1;
-      border-bottom: 1px solid #b1b1b1;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-    }
-    @include modifier("bottom-left-cell") {
-      border-right: 1px solid #b1b1b1;
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
-    }
-    @include modifier("center-cell") {
-      grid-row: 1/4;
-      grid-column: 2;
-    }
-    @include modifier("top-right-cell") {
-      border-left: 1px solid #b1b1b1;
-      border-bottom: 1px solid #b1b1b1;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-    }
-    @include modifier("bottom-right-cell") {
-      border-left: 1px solid #b1b1b1;
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-    }
+  @include modifier("top-left-cell") {
+    border-right: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  @include modifier("bottom-left-cell") {
+    border-right: 1px solid #b1b1b1;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  @include modifier("center-cell") {
+    grid-row: 1/4;
+    grid-column: 2;
+  }
+  @include modifier("top-right-cell") {
+    border-left: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  @include modifier("bottom-right-cell") {
+    border-left: 1px solid #b1b1b1;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
 }

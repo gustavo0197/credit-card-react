@@ -1,0 +1,40 @@
+@import "./src/assets/styles/mixins.scss";
+
+.card-icon {
+  position: absolute;
+  right: 2em;
+  top: 1.75em;
+
+  @include modifier("mastercard") {
+    height: 2.75em;
+    width: 5em;
+  }
+  @include modifier("amex") {
+    height: 2.75em;
+    width: 4.5em;
+  }
+  @include modifier("diners") {
+    height: 2em;
+    width: 3.5em;
+  }
+  @include modifier("discover") {
+    height: 2em;
+    width: 3.5em;
+  }
+  @include modifier("jcb") {
+    height: 3em;
+    width: 3em;
+  }
+  @include modifier("unionpay") {
+    height: 3em;
+    width: 3em;
+  }
+  @include modifier("visa") {
+    height: 2em;
+    width: 3.5em;
+  }
+  @include modifier("unknown") {
+    height: 2.5em;
+    width: 2.5em;
+  }
+}
