@@ -1,0 +1,14 @@
+@import "./src/assets/styles/mixins.scss";
+@import "./src/assets/styles/fonts.scss";
+
+.card-number {
+  border: 1px solid black;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: "Credit Card", "Roboto";
+  font-size: 1.5em;
+  color: white;
+}
