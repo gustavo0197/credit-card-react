@@ -1,10 +1,9 @@
-import React from 'react'
-
-import { ExampleComponent } from 'credit-card-react'
-import 'credit-card-react/dist/index.css'
+import React from "react";
+import { Mastercard } from "credit-card-react";
+import "credit-card-react/dist/index.css";
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return <Mastercard />;
+};
 
-export default App
+export default App;

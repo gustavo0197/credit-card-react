@@ -1,0 +1,7 @@
+@import "./src/assets/styles/mixins.scss";
+@import "./src/assets/styles/credit-card.scss";
+
+.mastercard {
+  background: transparent linear-gradient(240deg, #750000 0%, #e00000 100%) 0%
+    0% no-repeat padding-box;
+}
