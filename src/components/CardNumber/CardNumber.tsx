@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import lodash from "lodash";
 import "./CardNumber.scss";
 
 export function CardNumber({ number }: CardNumberProps) {
+  // Will have 4-digits groups to show card number with spaces like a real card
   const [fixedNumber, setFixedNumber] = useState<string[]>([]);
 
   useEffect(() => {
@@ -10,6 +10,7 @@ export function CardNumber({ number }: CardNumberProps) {
     const groups: number = _number.length / 4;
     const _fixedNumber: string[] = [];
 
+    // Split the card number in 4-digit groups
     for (let i = 0; i < groups; i++) {
       const group: string = _number.slice(i * 4, i * 4 + 4);
       _fixedNumber.push(group);
@@ -18,12 +19,13 @@ export function CardNumber({ number }: CardNumberProps) {
     setFixedNumber(_fixedNumber);
   }, [number]);
 
+  // If the card number is not completed (16 or 15 digits)
+  // it should be filled with •
   function fillNumber(): string {
-    let _number: string = lodash.trim(number);
+    let _number: string = number;
 
-    console.log("Number: ", number);
-    console.log("Trim number: ", lodash.trim(number));
-
+    // If the card number is less than 16 it should be filled
+    // TODO - Certain cards has less than 16 digits
     if (_number.length < 16) {
       const difference: number = 16 - _number.length;
 
@@ -35,6 +37,7 @@ export function CardNumber({ number }: CardNumberProps) {
     return _number;
   }
 
+  // Get the card number with spaces every 4 digits
   function getCardNumber(): string {
     let _number: string = "";
 

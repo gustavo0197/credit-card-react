@@ -2,6 +2,7 @@ import React from "react";
 import { CardChip } from "../../CardChip";
 import { CardLogo } from "../../CardLogo";
 import { CardNumber } from "../../CardNumber";
+import { CardOwnerName } from "../../CardOwnerName";
 import "./Mastercard.scss";
 
 export function Mastercard() {
@@ -9,7 +10,8 @@ export function Mastercard() {
     <div className="credit-card mastercard">
       <CardChip />
       <CardLogo brand="mastercard" />
-      <CardNumber number="4242 4242 424 24242" />
+      <CardNumber number="4242424242424242" />
+      <CardOwnerName />
     </div>
   );
 }
